@@ -21,7 +21,7 @@ function Card(props) {
     isOwner = true;
   }
 
-  const isLiked = props.card.likes.some(i => i._id === currentUser._id);
+  const isLiked = props.card.likes.some(i => i === currentUser._id);
   const cardLikeButtonClassName = (
     `cards__like-button ${isLiked && 'cards__like-button_active'}`
   );

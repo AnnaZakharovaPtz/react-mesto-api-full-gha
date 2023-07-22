@@ -19,7 +19,6 @@ const login = (req, res, next) => {
       if (!user) {
         throw new UnauthorizedError('Неверная почта или пароль');
       }
-
       return bcrypt.compare(password, user.password)
         .then((matched) => {
           if (!matched) {
@@ -30,13 +29,7 @@ const login = (req, res, next) => {
             JWT_SECRET,
             { expiresIn: '7d' },
           );
-          res
-            // .cookie('jwt', token, {
-            //   maxAge: 3600000,
-            //   httpOnly: true,
-            // })
-            // .set('Set-Cookie', `jwt=${token}`)
-            .send({ token });
+          res.send({ token });
         })
         .catch(next);
     })
