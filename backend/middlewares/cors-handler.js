@@ -1,6 +1,6 @@
 const allowedCors = [
-  'http://anna-zakharova.nomoredomains.xyz/',
-  'https://anna-zakharova.nomoredomains.xyz/',
+  'http://anna-zakharova.nomoredomains.xyz',
+  'https://anna-zakharova.nomoredomains.xyz',
 ];
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 
