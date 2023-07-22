@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.19.2
+IP 158.160.19.2
 
 Frontend https://anna-zakharova.nomoredomains.xyz
 
