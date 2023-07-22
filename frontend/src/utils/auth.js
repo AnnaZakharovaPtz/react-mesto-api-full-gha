@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://api.anna-zakharova.nomoredomains.xyz/';
+export const BASE_URL = 'http://api.anna-zakharova.nomoredomains.xyz';
 
 function checkResponse(res) {
   return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
