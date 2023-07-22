@@ -17,7 +17,7 @@ function Card(props) {
   }
 
   let isOwner = false;
-  if (props.card.owner._id === currentUser._id) {
+  if (props.card.owner === currentUser._id) {
     isOwner = true;
   }
 

@@ -99,7 +99,6 @@ export const MainPage = () => {
   }
 
   useEffect(() => {
-    console.log("main page");
     document.body.classList.add('page');
     api.getUserInfo()
       .then((data) => {

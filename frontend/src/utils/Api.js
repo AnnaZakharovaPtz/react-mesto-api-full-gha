@@ -1,4 +1,4 @@
-import { getToken } from "./auth.js";
+import { getToken, BASE_URL } from "./auth.js";
 
 class Api {
   constructor(options) {
@@ -101,7 +101,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'http://localhost:3001',
+  baseUrl: BASE_URL,
   headers: {
     authorization: `Bearer ${getToken()}`,
     'Content-Type': 'application/json'
