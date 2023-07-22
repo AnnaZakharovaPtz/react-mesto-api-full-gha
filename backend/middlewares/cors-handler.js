@@ -1,6 +1,6 @@
 const allowedCors = [
-  'http://localhost:3000',
-  'https://localhost:3000',
+  'http://anna-zakharova.nomoredomains.xyz/',
+  'https://anna-zakharova.nomoredomains.xyz/',
 ];
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 
