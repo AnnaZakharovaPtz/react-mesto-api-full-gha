@@ -1,0 +1,19 @@
+.logo {
+  width: 142px;
+  height: 33px;
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: 28px 0 31px 30px;
+    width: 104px;
+    height: 25px;
+    background-image: url(../../images/logo-s.svg);
+  }
+
+  .header_reversed .logo {
+    margin-left: 0;
+  }
+}

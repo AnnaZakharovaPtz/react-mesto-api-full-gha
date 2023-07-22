@@ -1,0 +1,20 @@
+.info-tool-tip__board {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  min-height: 330px;
+  margin: 0 40px 0 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .info-tool-tip__board {
+    max-width: 280px;
+    min-height: 308px;
+    margin: 0 auto;
+  }
+
+}

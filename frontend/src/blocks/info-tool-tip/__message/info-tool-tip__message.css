@@ -1,0 +1,20 @@
+.info-tool-tip__message {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+  max-width: 358px;
+  margin: 32px auto 60px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .info-tool-tip__message {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 244px;
+    margin: 40px auto 50px auto;
+  }
+}

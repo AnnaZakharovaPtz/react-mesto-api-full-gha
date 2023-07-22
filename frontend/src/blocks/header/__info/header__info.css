@@ -1,0 +1,19 @@
+.header__info {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 600px) {
+  .header__info {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_reversed .header__info {
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: rgba(84, 84, 84, 0.7);
+  }
+
+}

@@ -1,0 +1,13 @@
+.info-tool-tip__icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 60px auto 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .info-tool-tip__icon {
+    margin: 50px auto 0 auto;
+  }
+}

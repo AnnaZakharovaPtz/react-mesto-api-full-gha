@@ -1,0 +1,14 @@
+.login-form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .login-form {
+    width: 260px;
+  }
+}

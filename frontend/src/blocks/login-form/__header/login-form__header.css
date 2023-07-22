@@ -1,0 +1,16 @@
+.login-form__header {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 60px auto 50px auto;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  .login-form__header {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 40px auto 40px auto;
+  }
+}

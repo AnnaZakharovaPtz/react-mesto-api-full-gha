@@ -1,0 +1,14 @@
+.login-form__input {
+  margin: 0 auto 30px auto;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #CCCCCC;
+  background-color: transparent;
+
+  color: #CCCCCC;
+}
