@@ -4,7 +4,6 @@ const UnauthorizedError = require('../errors/unauthorized-error');
 const JWT_SECRET = 'some-secret-string-for-jwt';
 
 module.exports = (req, res, next) => {
-  // const token = req.cookies.jwt;
   const { authorization } = req.headers;
 
   if (!authorization || !authorization.startsWith('Bearer ')) {
