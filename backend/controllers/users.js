@@ -1,3 +1,4 @@
+const { NODE_ENV, JWT_SECRET } = process.env;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { default: mongoose } = require('mongoose');
@@ -8,7 +9,7 @@ const NotFoundError = require('../errors/not-found-err');
 const ConflictError = require('../errors/conflict-error');
 
 const DOCUMENT_CREATED = 201;
-const JWT_SECRET = 'some-secret-string-for-jwt';
+const DEV_SECRET = 'some-secret-string-for-jwt';
 const SALT_ROUNDS = 10;
 
 const login = (req, res, next) => {
@@ -26,7 +27,7 @@ const login = (req, res, next) => {
           }
           const token = jwt.sign(
             { _id: user._id },
-            JWT_SECRET,
+            NODE_ENV === 'production' ? JWT_SECRET : DEV_SECRET,
             { expiresIn: '7d' },
           );
           res.send({ token });
