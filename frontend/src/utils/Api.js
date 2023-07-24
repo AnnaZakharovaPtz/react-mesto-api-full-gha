@@ -10,6 +10,10 @@ class Api {
     return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
   }
 
+  updateToken() {
+    this._headers.authorization = `Bearer ${getToken()}`;
+  }
+
   getUserInfo() {
     return fetch(`${this._url}/users/me`, {
       headers: this._headers

@@ -100,6 +100,8 @@ export const MainPage = () => {
 
   useEffect(() => {
     document.body.classList.add('page');
+    api.updateToken();
+
     api.getUserInfo()
       .then((data) => {
         setCurrentUser(data);
